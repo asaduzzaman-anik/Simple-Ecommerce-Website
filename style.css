@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: #2F243A;
+    --secondary-color: #FAC9B8;
+    --light-color: #BEBBBB;
+    --hover-color: #DB8A74;
+    --color-pink: #ed1ff5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-color);
+}
+/* Styling for header starts here */
+header{
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+/* header logo */
+header .logo {
+    font-size: 2rem;    
+    color: var(--primary-color);
+}
+header .logo a{
+    text-decoration: none;    
+}
+header .logo a span{
+    /* font-size: 3rem; */
+    color: var(--color-pink);
+}
+/* header navbar */
+header .navbar{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+header .navbar a{
+    text-decoration: none;
+}
+header .navbar a:hover{
+    text-decoration: underline;
+    color: var(--color-pink);
+}
+/* header icons */
+header .icons{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+}
+header .icons a{
+    text-decoration: none;    
+}
+header .icons a:hover{
+    color: var(--color-pink);
+}
