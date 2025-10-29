@@ -15,7 +15,7 @@ header{
     background: white;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
-
+/* navbar styling starts here  */
 .navbar{
     margin: 0 5rem;
     display: flex;
@@ -25,6 +25,9 @@ header{
     justify-content: space-between;
     text-align: center;
     color: purple;
+}
+.navbar a{
+    text-decoration: none;
 }
 .navbar .brand h1{
     position: relative;
@@ -74,7 +77,8 @@ header{
     height: 100vh;
     z-index: 999;
     font-size: 1.3rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.2); */
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.2);
     display: none;
@@ -107,12 +111,54 @@ header{
 }
 .menu-btn{
     display: none;
+    padding-left: 1rem;
+}
+/* navbar styling ends here */
+
+/* hero section styling starts here */
+.hero{
+    height:auto;
+    background-image: url('images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 15%;
+    max-width: 500px;
+    height: auto;
+}
+.hero-content h1{
+    font-size: 6rem;
+    line-height: 1.1;
+    color: #000;
+}
+.hero-content p{
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #000;
+}
+.hero-content .shop-now-btn{
+    width: fit-content;
+    background-color: purple;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.hero-content .shop-now-btn:hover{
+    background-color: rgb(126, 79, 45);
 }
 
+/* hero section styling ends here */
 
+
+/* responsive styling starts here */
 @media (max-width: 800px){
     .navbar{
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
     .navbar .brand h1{
         font-size: 1.5rem;
@@ -127,9 +173,12 @@ header{
         display: block;
     }
 }
-@media (min-width: 400){
+@media (max-width: 400){
     .sidebar{
         width: 100%;
+    }
+    .sidebar .brand h3{
+        display: none;
     }
 }
 
