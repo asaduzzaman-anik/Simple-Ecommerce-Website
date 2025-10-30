@@ -17,7 +17,7 @@ header{
 }
 /* navbar styling starts here  */
 .navbar{
-    margin: 0 5rem;
+    padding: 0 5rem;
     display: flex;
     font-size: 1.5rem;
     font-weight: 600;
@@ -28,6 +28,7 @@ header{
 }
 .navbar a{
     text-decoration: none;
+    color: purple;
 }
 .navbar .brand h1{
     position: relative;
@@ -117,10 +118,11 @@ header{
 
 /* hero section styling starts here */
 .hero{
-    height:auto;
+    height:90vh;
     background-image: url('images/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    align-content: center;
 }
 .hero-content{
     display: flex;
@@ -154,6 +156,84 @@ header{
 
 /* hero section styling ends here */
 
+.products{
+    padding: 2rem 5%;
+}
+.products .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+.products .heading h1{
+    font-size: 2.5rem;
+}
+.products .heading a{
+    text-decoration: none;
+    color: purple;
+    font-weight: 500;
+    align-items: center;
+}
+.products .heading a:hover{
+    text-decoration: underline;
+}
+
+.products .item-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.products .item-container .item-card{
+    padding: .5rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    display: block;
+    cursor: pointer;
+}
+.products .item-container .item-card .item-image{
+    position: relative;
+    overflow: hidden;
+}
+.products .item-container .item-card .item-image img{
+    height: 30rem;
+    width: 20rem;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+.products .item-container .item-card .item-image .item-icons{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.products .item-container .item-card:hover .item-image .item-icons{
+    bottom: 0;
+}
+.products .item-container .item-card .item-image .item-icons a{
+    height: 5rem;
+    text-decoration: none;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+.products .item-container .item-card .item-image .item-icons a:hover{
+    color: purple;
+}
+.products .item-container .item-card .item-info{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+
+
 
 /* responsive styling starts here */
 @media (max-width: 800px){
@@ -172,6 +252,7 @@ header{
     .menu-btn{
         display: block;
     }
+    
 }
 @media (max-width: 400){
     .sidebar{
